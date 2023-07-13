@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Documentation of Javascripts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<body>
+
+/////////////////////////////////////////////////////////////////////////////
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo1">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<br>
+
+/////////////////////////////////////////////////////////////////////////////
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='light-bulb.gif'">Turn on the light</button>
+
+<img id="myImage" alt="myImage" src="off-bulb.gif" >
+
+<button onclick="document.getElementById('myImage').src='off-bulb.gif'">Turn off the light</button><br>
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo2">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button><br>
+
+////////////////////////////////////////////////////////////////////////
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo3">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button><br>
+
+/////////////////////////////////////////////////////////////////////////////
+<h2>JavaScript in Body</h2>
+
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML = "My First JavaScript";
+</script>
+
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo5").innerHTML = "Paragraph changed.";
+}
+</script>
+
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo5">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button><br>
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo6">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button><br>
+
+<script>
+function myFunction() {
+  document.getElementById("demo6").innerHTML = "Paragraph changed.";
+}
+</script>
+
+/////////////////////////////////////////////////////////////////
+
+
+
+
+
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo7"></p>
+
+<script>
+let x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+
+document.getElementById("demo7").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+
+///////////////////////////////////////////////////////////////
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo8").innerHTML = "Hello Dolly!";
+  document.getElementById("demo9").innerHTML = "How are you?";
+}
+</script>
+//////////////////////////////////////////////////////////////////////
+
+
+  
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+      text-align: center;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>KEYWORD</th>
+      <th>DESCRIPTION</th>
+    </tr>
+    <tr>
+      <td>var</td>
+      <td>Declares a variable</td>
+    </tr>
+    <tr>
+      <td>let</td>
+      <td>Declares a block variable</td>
+    </tr>
+    <tr>
+      <td>const</td>
+      <td>Declares a block variable</td> 
+    </tr>
+    <tr>
+      <td>if</td>
+      <td>Marks a block of statements to be executed on condition </td> 
+    </tr>
+    <tr>
+      <td>switch</td>
+      <td>Marks a block statements to be executed in different cases</td> 
+    </tr>
+    <tr>
+      <td>for</td>
+      <td>Marks a block statements to be executed in a loop</td> 
+    </tr>
+    <tr>
+      <td>function</td>
+      <td>Declares a function</td> 
+    </tr>
+    <tr>
+      <td>return</td>
+      <td>Exits a function</td> 
+    </tr>
+    <tr>
+      <td>try</td>
+      <td>Implements a error handling to a block statements </td> 
+    </tr>
+  </table>
+  <br>
+
+  ////////////////////////////////////////////////////////////////////////////////////
+
+  
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo10"></p>
+
+<script>
+document.getElementById("demo10").innerHTML = 10.50;
+</script>
+
+<br>
+/////////////////////////////////////////////////////////////////
+
+
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable.
+Then, x is assigned the value of 6:</p>
+
+<p id="demo11"></p>
+
+<script>
+{let x;
+x = 6;
+document.getElementById("demo11").innerHTML = x;
+}
+</script>
+
+
+///////////////////////////////////////////////////////////////////////////////////
+<h2>JavaScript Operators</h2>
+
+<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+<p id="demo12"></p>
+
+<script>
+document.getElementById("demo12").innerHTML = (5 + 6) * 10;
+</script>
+//////////////////////////////////////////////////////////////////////////////
+
+<h1>JavaScript Arithmetic</h1>
+<h2>The ++ Operator</h2>
+
+<p id="demo13"></p>
+
+<script>
+let a = 5;
+a++;
+let b = a;
+document.getElementById("demo13").innerHTML = b;
+</script>
+
+<br>
+//////////////////////////////////////////////////////////////////////
+
+<h2>JavaScript has 8 datatypes</h2>
+
+  <li>String</li>
+  <li>Number</li>
+  <li>Bigint</li>
+  <li>Boolean</li>
+  <li>Undefined</li>
+  <li>Null</li>
+  <li>Symbol</li>
+  <li>Object</li>
+<h2>The Object Datatype</h2>
+<h3>The Object data type can contain:</h3>
+<li>An Object</li>
+<li>An Array</li>
+<li>An Date</li>
+<br>
+
+// Numbers:
+let length = 16;
+let weight = 7.5;
+<br>
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+<br>
+
+// Booleans
+let x = true;
+let y = false;
+<br>
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+<br>
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+<br>
+
+// Date object:
+const date = new Date("2022-03-25");
+<br>
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
